@@ -1,0 +1,14 @@
+defaults:
+  - meta_base
+
+name: sot
+n_task: 4
+task_update_num: 1
+
+sot_inner_lr: 0.01
+
+cls:
+  _target_: methods.sot.SOTClASS
+  n_task: ${method.n_task}
+  task_update_num: ${method.task_update_num}
+  inner_lr: ${method.sot_inner_lr}
