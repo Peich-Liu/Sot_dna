@@ -31,6 +31,8 @@ class ProtoNetSOT(MetaTemplate):
 
         dists = euclidean_dist(z_query, z_proto)
         scores = -dists
+        scores = self.sot(scores)
+        scores = self.classifier1(scores)
         return scores
 
 
@@ -42,9 +44,9 @@ class ProtoNetSOT(MetaTemplate):
         
         
         scores = self.set_forward(x)
-        scores = self.sot(scores)
-        print("scores.shape",scores.shape)
-        scores = self.classifier1(scores)
+        # scores = self.sot(scores)
+        # print("scores.shape",scores.shape)
+        # scores = self.classifier1(scores)
         # print("x=",y_query,"protosot",y_query.shape,"scores",scores,"scores.shape",scores.shape)
         return self.loss_fn(scores, y_query )
 
