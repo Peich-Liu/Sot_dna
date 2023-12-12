@@ -1,4 +1,4 @@
-# Few Shot Benchmark for Biomedical Datasets
+#  Extending the benchmark with the Self-Optimal-Transport Feature Transform algorithm
 
 
 ## Installation
@@ -32,13 +32,18 @@ python -m pip install -r requirements.txt
 ### SOT Training
 The linear classifier with SOT: python run.py exp.name={exp_name} method=sot dataset={dataset_name}
 The Protonet classifier with SOT: python run.py exp.name={exp_name} method=sotprotonet dataset={dataset_name}
-### Conv Training
-### Training
-
+### Different Backbone Training
+The FcNet layer as the backbone: 
+    python run.py exp.name={exp_name} method={method_name} dataset=tabula_muris
+    python run.py exp.name={exp_name} method={method_name} dataset=swissprot
+The Conv layer as the backbone:
+    python run.py exp.name={exp_name} method={method_name} dataset=tabula_muris_conv
+    python run.py exp.name={exp_name} method={method_name} dataset=swissprot_conv
+  
+### Default Training
 ```bash
 python run.py exp.name={exp_name} method=maml dataset=tabula_muris
 ```
-
 By default, method is set to MAML, and dataset is set to Tabula Muris.
 The experiment name must always be specified.
 
