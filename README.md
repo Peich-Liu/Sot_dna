@@ -30,15 +30,25 @@ python -m pip install -r requirements.txt
 
 ## Usage
 ### SOT Training
-The linear classifier with SOT: python run.py exp.name={exp_name} method=sot dataset={dataset_name}
-The Protonet classifier with SOT: python run.py exp.name={exp_name} method=sotprotonet dataset={dataset_name}
+The linear classifier with SOT: 
+```bash
+python run.py exp.name={exp_name} method=sot dataset={dataset_name}
+```
+The Protonet classifier with SOT: 
+```bash
+python run.py exp.name={exp_name} method=sotprotonet dataset={dataset_name}
+```
 ### Different Backbone Training
 The FcNet layer as the backbone: 
+```bash
     python run.py exp.name={exp_name} method={method_name} dataset=tabula_muris
     python run.py exp.name={exp_name} method={method_name} dataset=swissprot
+```
 The Conv layer as the backbone:
+```bash
     python run.py exp.name={exp_name} method={method_name} dataset=tabula_muris_conv
     python run.py exp.name={exp_name} method={method_name} dataset=swissprot_conv
+```
   
 ### Default Training
 ```bash
