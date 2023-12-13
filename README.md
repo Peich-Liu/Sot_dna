@@ -154,3 +154,7 @@ preprocessing code is modified from each respective dataset paper, where applica
 - [How to integrate a dataset into the benchmark ?](https://docs.google.com/document/d/11JNrneGe9Drb1tO3Sq0ZaIPBeANIzXUxJqm9Kq1oZYM/edit)
 - Slides (Available on Moodle)
 
+### Reference
+SOT: The Self-Optimal-Transport Feature Transform: 
+    git link: https://github.com/DanielShalam/SOT.git
+
