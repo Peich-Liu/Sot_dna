@@ -3,7 +3,11 @@
 
 ## Installation
 
-use git clone https://github.com/Peich-Liu/Sot_dna.git to clone the code to the computer
+use 
+```bash
+git clone https://github.com/Peich-Liu/Sot_dna.git
+```
+to clone the code to the computer
 
 ### Conda
 
